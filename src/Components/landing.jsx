@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import { Calendar, MapPin, Mountain, Menu, X } from "lucide-react"
+import { Link } from "react-router-dom";
+import routes from "../../public/routes";
 import "./landing.css"
 
 const AlmaDeMontana = () => {
@@ -11,40 +13,7 @@ const AlmaDeMontana = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const monthlyRoutes = [
-    {
-      id: 1,
-      name: "Sendero del Valle",
-      date: "5 de Mayo, 2025",
-      difficulty: "Moderada",
-      duration: "4 horas",
-      location: "Valle Verde",
-    },
-    {
-      id: 2,
-      name: "Cumbre del Águila",
-      date: "12 de Mayo, 2025",
-      difficulty: "Difícil",
-      duration: "7 horas",
-      location: "Sierra Alta",
-    },
-    {
-      id: 3,
-      name: "Cascada Escondida",
-      date: "19 de Mayo, 2025",
-      difficulty: "Fácil",
-      duration: "3 horas",
-      location: "Bosque Azul",
-    },
-    {
-      id: 4,
-      name: "Mirador del Cóndor",
-      date: "26 de Mayo, 2025",
-      difficulty: "Moderada",
-      duration: "5 horas",
-      location: "Montañas del Este",
-    },
-  ]
+  const monthlyRoutes =routes 
 
   return (
     <div className="Conten">
@@ -61,8 +30,7 @@ const AlmaDeMontana = () => {
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <a href="#inicio">Inicio</a>
-            <a href="#mision">Misión</a>
-            <a href="#vision">Visión</a>
+            <a href="#mision">Misión y Visión</a>           
             <a href="#rutas">Rutas del Mes</a>
             <a href="#contacto">Contacto</a>
           </nav>
@@ -99,20 +67,23 @@ const AlmaDeMontana = () => {
 
       {/* Hero Section */}
       <section id="inicio" className="hero">
+        <div className="relleno"></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Explora la Naturaleza con Nosotros</h1>
-          <p>Descubre senderos, montañas y paisajes increíbles en compañía de otros amantes de la naturaleza.</p>
-          <button className="hero-button">Únete a Nosotros</button>
+          <div>  
+            <h1>Explora la Naturaleza con Nosotros</h1>
+            <p>Descubre senderos, montañas y paisajes increíbles en compañía de otros amantes de la naturaleza.</p>
+           
+          </div>
         </div>
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="mission-vision">
+      <section className="mission-vision" id="mision">
         <div className="container">
           <div className="mission-vision-grid">
             {/* Mission */}
-            <div id="mision" className="mission-card">
+            <div  className="mission-card">
               <h2 className="section-title">
                 <span className="icon-bg">
                   <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
@@ -120,8 +91,15 @@ const AlmaDeMontana = () => {
                 Nuestra Misión
               </h2>
               <p className="section-text">
-                En Alma de Montaña, nuestra misión es conectar a las personas con la naturaleza a través de experiencias
-                de senderismo seguras, educativas y enriquecedoras.
+              En Alma de Montaña, no solo recorremos senderos, 
+              abrazamos la naturaleza y transformamos vidas. 
+              Somos una familia de aventureros apasionados por la montaña, 
+              que encuentra en cada caminada una oportunidad para sanar el cuerpo, 
+              despejar la mente y alimentar el alma. Creemos que el contacto con 
+              la naturaleza es una de las formas más poderosas de liberar el estrés, 
+              fortalecer la salud y reconectar con lo esencial. 
+              Más que un deporte, promovemos un estilo de vida consciente, donde el respeto 
+              y el amor por la naturaleza nos guían en cada paso.
               </p>
               <p className="section-text">
                 Nos comprometemos a fomentar una comunidad de amantes del aire libre que respetan y protegen el medio
@@ -130,7 +108,7 @@ const AlmaDeMontana = () => {
             </div>
 
             {/* Vision */}
-            <div id="vision" className="vision-card">
+            <div className="vision-card">
               <h2 className="section-title">
                 <span className="icon-bg">
                   <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
@@ -138,8 +116,16 @@ const AlmaDeMontana = () => {
                 Nuestra Visión
               </h2>
               <p className="section-text">
-                Aspiramos a ser el grupo de senderismo líder, reconocido por nuestro compromiso con la conservación
-                ambiental y por crear experiencias transformadoras en la naturaleza.
+              Ser la comunidad de senderismo más apasionada, 
+              donde cada persona descubra que la montaña no es solo un destino, 
+              sino un camino hacia el bienestar y la plenitud. 
+              Queremos inspirar a más personas a salir de la rutina, 
+              descubrir la belleza de la naturaleza y entender que caminar por 
+              los senderos es más que una actividad física: es una inversión en su salud, 
+              en su paz mental y en su felicidad. En Alma de Montaña, creemos que amar la 
+              montaña es también protegerla, por eso fomentamos el respeto y la conservación 
+              de cada lugar que exploramos, asegurando que futuras generaciones puedan seguir 
+              encontrando en ella su refugio y su energía.
               </p>
               <p className="section-text">
                 Visualizamos un mundo donde más personas descubran los beneficios físicos, mentales y espirituales de
@@ -161,7 +147,9 @@ const AlmaDeMontana = () => {
           <div className="routes-grid">
             {monthlyRoutes.map((route) => (
               <div key={route.id} className="route-card">
-                <div className="route-image"></div>
+                <div className="route-image">
+                <img src={route.img} alt={route.name} />
+                </div>
                 <div className="route-content">
                   <h3 className="route-title">{route.name}</h3>
                   <div className="route-info">
@@ -177,11 +165,15 @@ const AlmaDeMontana = () => {
                     <span className="route-duration">{route.duration}</span>
                   </div>
                 </div>
+                <div className="route-detalles">             
+              <Link to={`/route/${route.id}`}>
+                <button>Ver detalles</button>
+              </Link>
+            </div>
               </div>
             ))}
           </div>
-
-          <button className="view-all-button">Ver Todas las Rutas</button>
+      
         </div>
       </section>
 
@@ -200,13 +192,11 @@ const AlmaDeMontana = () => {
             </div>
 
             <div className="footer-contact">
-              <h3 className="footer-title">Contacto</h3>
-              <p>Email: info@almademontana.com</p>
-              <p>Teléfono: +123 456 7890</p>
+              <h3 className="footer-title">Contacto</h3>              
+              <a href="https://wa.me/573194969983" class="whatsapp-link" target="_blank">Whatsapp 3194969983</a>
+
               <div className="social-links">
                 <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
               </div>
             </div>
           </div>

@@ -8,6 +8,11 @@
   .Conten{
     width: 100%;
   }
+
+  .relleno{
+    height: 78px;
+    width: 100%;
+  }
   
   body {
     font-family: 'Arial', sans-serif;
@@ -27,7 +32,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(4px);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
@@ -51,7 +56,7 @@
 
   .logo-text {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 100%;
     background: linear-gradient(to right, #4d7c0f, #65a30d);
     -webkit-background-clip: text;
     background-clip: text;
@@ -123,7 +128,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
-  }
+    background-image: url('./Fondo.jpg');
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-position: center; /* Para centrar la imagen */
+}
+
   
   .hero-content {
     position: relative;
@@ -131,6 +140,13 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1rem;
+    color: rgb(0, 55, 0);
+  }
+
+  .hero-content div{
+    background: rgba(255, 255, 255, 0.298);
+    border-radius: 20px;
+    padding: 10px;
   }
   
   .hero h1 {
@@ -220,7 +236,8 @@
     font-weight: bold;
     color: #4d7c0f;
     margin-bottom: 1rem;
-  }
+    margin-top: 3%;
+}
   
   .section-header p {
     font-size: 1.25rem;
@@ -240,6 +257,7 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.161);
   }
   
   .route-card:hover {
@@ -247,10 +265,12 @@
   }
   
   .route-image {
-    height: 12rem;
-    background-image: url('/placeholder.svg?height=300&width=400');
-    background-size: cover;
-    background-position: center;
+    height: 12rem;   
+  }
+
+  .route-image img {
+    width: 100%;
+    height: 100%;
   }
   
   .route-content {
@@ -292,24 +312,32 @@
     font-size: 0.875rem;
   }
   
-  .view-all-button {
-    display: block;
-    margin: 2.5rem auto 0;
-    background-color: #4d7c0f;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    font-size: 1.125rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  .route-detalles{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+ 
+  .route-detalles button {
+    margin: auto;
+    background-color: #4d7c0f;  
+    color: white;  
+    border: none;  
+    padding: 8px 16px;  
+    border-radius: 4px;  
+    font-size: 14px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+    margin-bottom: 10px;
   }
   
-  .view-all-button:hover {
-    background-color: #65a30d;
+  .route-detalles button:hover {
+    background-color: #3c670d;  
   }
   
+ 
+  
+ 
   /* Footer */
   .footer {
     background-color: #4d7c0f;
@@ -371,13 +399,15 @@
     padding-top: 2rem;
     text-align: center;
   }
+
   
   /* Responsive styles */
   @media (min-width: 768px) {
     .desktop-nav {
       display: flex;
     }
-    
+
+       
     .menu-button {
       display: none;
     }
@@ -397,7 +427,8 @@
     .mission-vision-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
-    }
+      margin-top: 3%;
+  }
     
     .routes-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -416,6 +447,10 @@
     
     .section-title {
       font-size: 2.25rem;
+    }
+
+    .logo-text{
+        font-size: 120%;
     }
   }
   
