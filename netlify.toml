@@ -1,6 +1,6 @@
 [build]
-  base = "Alma-Montana"          # Cambia esto si tu directorio base es diferente
-  publish = "Alma-Montana"       # Si tu sitio está en ese directorio, usa el mismo nombre
+  base = "Senderismo"            # Cambia a "Senderismo" en lugar de "Alma-Montana"
+  publish = "Senderismo"         # Si tu sitio está en ese directorio, usa el mismo nombre
   command = "npm run build"      # Comando para construir el sitio (ajusta si es necesario)
 
 [build.environment]
