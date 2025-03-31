@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Mountain } from "lucide-react";
 import { useParams } from "react-router-dom"; // Para obtener el id de la URL
 import "./ruta.css"; // Asegúrate de tener este archivo de estilos
-import routes from "../../public/routes";
+import routes from "/public/routes";
 
 const RouteDetails = () => {
   const { id } = useParams(); // Obtener el id de la URL

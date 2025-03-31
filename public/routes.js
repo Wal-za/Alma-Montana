@@ -63,7 +63,7 @@ const routes = [
     description: 
       "El Cerro Tusa es conocido como la pirámide natural más grande del mundo, una formación geológica impresionante que domina el paisaje del suroeste antioqueño. La ruta hacia su cima es desafiante, pero las vistas panorámicas de los valles, montañas y los pueblos cercanos hacen que el esfuerzo valga la pena. A lo largo del camino, explorarás formaciones rocosas ancestrales como el Altar de los Sacrificios, y te sorprenderás con el fenómeno acústico único de la Piedra del Eco. Este sendero está lleno de historia, mitología y naturaleza exuberante.",
     included: ["Transporte ida y regreso", "Guía local", "Seguro médico"],
-    price: { withLunch: "No Incluido", withoutLunch: "100.000" },
+    price: { withoutLunch: "$100.000" },
     itinerary: [
       "Salida de Medellín hacia Venecia",
       "Ascenso al Cerro Tusa – Un reto físico con vistas espectaculares",
