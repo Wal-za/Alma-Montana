@@ -1,5 +1,5 @@
 [build]
-  base = "Senderismo"            # Cambia a "Senderismo" en lugar de "Alma-Montana"
+  base = "Wal-za/Senderismo"            # Cambia a "Senderismo" en lugar de "Alma-Montana"
   publish = "Senderismo"         # Si tu sitio está en ese directorio, usa el mismo nombre
   command = "npm run build"      # Comando para construir el sitio (ajusta si es necesario)
 
