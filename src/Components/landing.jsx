@@ -26,10 +26,11 @@ const AlmaDeMontana = () => {
             </div>
             <span className="logo-text">Alma de Montaña</span>
           </div>
-
+          
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <a href="#inicio">Inicio</a>
+            <a href="#quienes-somos"> Quienes Somos</a>  
             <a href="#mision">Misión y Visión</a>           
             <a href="#rutas">Rutas del Mes</a>
             <a href="#contacto">Contacto</a>
@@ -48,12 +49,12 @@ const AlmaDeMontana = () => {
               <a href="#inicio" onClick={toggleMenu}>
                 Inicio
               </a>
+              <a href="#quienes-somos" onClick={toggleMenu}>
+              Quienes Somos
+              </a>
               <a href="#mision" onClick={toggleMenu}>
                 Misión
-              </a>
-              <a href="#vision" onClick={toggleMenu}>
-                Visión
-              </a>
+              </a>             
               <a href="#rutas" onClick={toggleMenu}>
                 Rutas del Mes
               </a>
@@ -77,6 +78,32 @@ const AlmaDeMontana = () => {
           </div>
         </div>
       </section>
+
+      <section className="mission-vision" id="quienes-somos">
+  <div className="container">
+    <div className="">
+      {/* Quienes Somos */}
+      <div className="mission-card">
+        <h2 className="section-title">
+          <span className="icon-bg">
+            <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
+          </span>
+          Quienes Somos
+        </h2>
+        <p className="section-text">
+          Somos una familia unida por la pasión por la naturaleza. Caminamos por los senderos no solo para explorar, sino para conectar, reflexionar y renovar nuestra energía. En cada paso, vemos la oportunidad de cuidar, proteger y celebrar la tierra que nos acoge. Nuestro amor por la naturaleza nos impulsa a compartir este viaje con todos aquellos que deseen descubrir, con respeto y gratitud, la belleza que se esconde en cada rincón del mundo natural.
+        </p>
+        <p className="section-text">
+          En nuestra comunidad, cada caminata es un acto de amor hacia la madre tierra. Creemos firmemente que el senderismo no solo es un deporte, sino una forma de vida consciente que nos invita a reflexionar sobre nuestro impacto y la necesidad urgente de preservar el entorno para las generaciones futuras. Al unirnos como familia de senderistas, queremos inspirar a más personas a descubrir el senderismo como una forma de cuidar de sí mismos mientras cuidan del mundo que los rodea. No es solo caminar; es una manera de despertar nuestra conciencia, apreciar lo que tenemos y, lo más importante, protegerlo.
+        </p>
+        <p className="section-text">
+          Si eres amante de la naturaleza y deseas formar parte de un grupo que pone en primer plano el respeto por la tierra, te invitamos a unirte a nuestra familia de senderistas. Juntos, recorreremos senderos, descubriremos nuevos horizontes y, sobre todo, aprenderemos a amar y cuidar este planeta que es nuestra casa. ¡El viaje empieza hoy!
+        </p>
+      </div>
+    </div>
+  </div>
+      </section>
+
 
       {/* Mission & Vision Section */}
       <section className="mission-vision" id="mision">
@@ -179,7 +206,7 @@ const AlmaDeMontana = () => {
 
       {/* Footer */}
       <footer id="contacto" className="footer">
-        <div className="container">
+        <div className="container footercontainer">
           <div className="footer-container">
             <div>
               <div className="footer-logo">

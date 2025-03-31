@@ -344,6 +344,10 @@
     color: white;
     padding: 3rem 0;
   }
+
+  .footercontainer{
+    width: 80%;
+  }
   
   .footer-container {
     display: flex;

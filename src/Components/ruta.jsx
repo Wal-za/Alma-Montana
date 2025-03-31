@@ -11,7 +11,7 @@ const RouteDetails = () => {
 
   useEffect(() => {
     // Buscar la ruta que coincida con el id
-    const route = routes.find((route) => route.id === parseInt(id)); // Convertir id en número
+    const route = routes.find((route) => route.id === id);
     if (route) {
       setRouteData(route);
       setLoading(false);
@@ -30,108 +30,122 @@ const RouteDetails = () => {
       <header className="header">
         <div className="container header-container">
           <div className="logo">
-            <img src="./logo.png" className="logo-img" alt="Alma de Montaña" />
+          <img src="../../public/logo.png" className="logo-img"  alt="Alma de Montaña"/>
             <span className="logo-text">Alma de Montaña</span>
           </div>
         </div>
       </header>
 
-      {/* Mapa y Altimetría */}
-      <div className="map">
-        <h2>{routeData.name}</h2>
-        <h3>Mapa:</h3>
-        <img src={routeData.mapImage} alt="Mapa de la Ruta" />
+      <div className="contenedor-rutas">
+        {/* Mapa y Altimetría */}
+        <div className="map">
+          <h2>{routeData.name}</h2>
+          <h3>Mapa:</h3>
+          <img src={routeData.mapImage} alt="Mapa de la Ruta" />
 
-       {/* Imagen de Altimetría */}
-        {routeData.altitudeProfileImage && (
-        <div className="altimetry">
-            <h3>Altimetría:</h3>
-            <img src={routeData.altitudeProfileImage} alt="Altimetría de la Ruta"  className="altimetria"/>
+          {/* Imagen de Altimetría */}
+          {routeData.altitudeProfileImage && (
+            <div className="altimetry">
+              <h3>Altimetría:</h3>
+              <img
+                src={routeData.altitudeProfileImage}
+                alt="Altimetría de la Ruta"
+                className="altimetria"
+              />
+            </div>
+          )}
         </div>
-        )}
-      </div>
 
-      <p>
-        <strong>Fecha:</strong> {routeData.date}
-      </p>
-      <p>
-        <strong>Punto de encuentro:</strong> {routeData.meetingTime} – {routeData.meetingPoint}
-      </p>
-      <p>
-        <strong>Distancia:</strong> {routeData.duration}
-      </p>
-      <p>
-        <strong>Altura máxima:</strong> {routeData.maxAltitude}
-      </p>
-      <p>
-        <strong>Dificultad:</strong> {routeData.difficulty}
-      </p>
-
-      <div className="description">
-        <h3>Descripción</h3>
-        <p>{routeData.description}</p>
-      </div>
-
-      <div className="included">
-        <h3>Incluye:</h3>
-        <ul>
-          {routeData.included.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="price">
-        <h3>Valor:</h3>
         <p>
-          <strong>Con almuerzo:</strong> {routeData.price.withLunch}
+          <strong>Fecha:</strong> {routeData.date}
         </p>
         <p>
-          <strong>Sin almuerzo:</strong> {routeData.price.withoutLunch}
+          <strong>Punto de encuentro:&nbsp;&nbsp;&nbsp; </strong> {routeData.meetingTime} – {routeData.meetingPoint}
         </p>
-      </div>
+        <p>
+          <strong>Distancia:</strong> {routeData.duration}
+        </p>
+        <p>
+          <strong>Altura máxima:</strong> {routeData.maxAltitude}
+        </p>
+        <p>
+          <strong>Dificultad:</strong> {routeData.difficulty}
+        </p>
 
-      <div className="itinerary">
-        <h3>Itinerario:</h3>
-        <ul>
-          {routeData.itinerary.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
+        <div className="description">
+          <h3>Descripción</h3>
+          <p>{routeData.description}</p>
+        </div>
 
-      <div className="attractions">
-        <h3>Atractivos:</h3>
-        <ul>
-          {routeData.attractions.map((attraction, index) => (
-            <li key={index}>{attraction}</li>
-          ))}
-        </ul>
-      </div>
+        <div className="included">
+          <h3>Incluye:</h3>
+          <ul>
+            {routeData.included.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
 
-      <div className="recommendations">
-        <h3>Recomendaciones:</h3>
-        <ul>
-          {routeData.recommendations.map((rec, index) => (
-            <li key={index}>{rec}</li>
-          ))}
-        </ul>
-      </div>
+        {/* Sección de Valor modificada */}
+        <div className="weather">
+          <h3>Clima:</h3>
+          <p>
+            <strong>Temperatura promedio:</strong> {routeData.temperature}
+          </p>
+          <p>
+            <strong>Clima esperado:</strong> {routeData.climate}
+          </p>
+        </div>
 
-      <div className="images">
-        <h3>Imágenes de la Ruta:</h3>
-        {routeData.images.map((image, index) => (
-          <img key={index} src={image} alt={`Imagen ${index + 1}`} />
-        ))}
+        <div className="price">
+          <h3>Valor:</h3>
+          <p>
+            {routeData.price.withoutLunch}
+          </p>
+        </div>
 
-<button class="btn-inscribirse">
-  Inscribirse
-</button>
+        <div className="itinerary">
+          <h3>Itinerario:</h3>
+          <ul>
+            {routeData.itinerary.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="attractions">
+          <h3>Atractivos:</h3>
+          <ul>
+            {routeData.attractions.map((attraction, index) => (
+              <li key={index}>{attraction}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="recommendations">
+          <h3>Recomendaciones:</h3>
+          <ul>
+            {routeData.recommendations.map((rec, index) => (
+              <li key={index}>{rec}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3>Imágenes de la Ruta:</h3>
+          <div className="images">
+            {routeData.images.map((image, index) => (
+              <img key={index} src={image} alt={`Imagen ${index + 1}`} />
+            ))}
+          </div>
+
+          <button className="btn-inscribirse">Inscribirse</button>
+        </div>
       </div>
 
       {/* Footer */}
       <footer id="contacto" className="footer">
-        <div className="container">
+        <div className="container footercontainer">
           <div className="footer-container">
             <div>
               <div className="footer-logo">
