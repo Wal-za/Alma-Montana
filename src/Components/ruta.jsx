@@ -30,7 +30,7 @@ const RouteDetails = () => {
       <header className="header">
         <div className="container header-container">
           <div className="logo">
-          <img src="/public/logo.png" className="logo-img"  alt="Alma de Montaña"/>
+          <img src="./logo.png" className="logo-img"  alt="Alma de Montaña"/>
             <span className="logo-text">Alma de Montaña</span>
           </div>
         </div>
