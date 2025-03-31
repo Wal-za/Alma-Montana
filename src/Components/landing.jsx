@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Calendar, MapPin, Mountain, Menu, X } from "lucide-react"
 import { Link } from "react-router-dom";
-import routes from "/public/routes";
+import routes from "/public/routes.js";
 import "./landing.css"
 
 const AlmaDeMontana = () => {
