@@ -37,7 +37,7 @@ const routes = [
       "Bastón de senderismo (opcional)",
     ],
     weatherForecast: "https://weather.com/forecast-link",
-    mapImage: "../../public/Rutas/Belmira.PNG",
+    mapImage: "/Rutas/Belmira.PNG",
     altitudeProfileImage: "../../public/Rutas/Belmira2.PNG",
     gpsCoordinates: { lat: 6.0, long: -75.9 },
     environmentalImpact: "Bajo",
@@ -46,6 +46,7 @@ const routes = [
       "https://aaecoturismo.com/wp-content/uploads/2019/08/Belmira-2.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ76OhbJcfJy3YSlVPNtfQ8fqzoAcE0vpaIA&s",
       "https://ecoglobalexpeditions.com/wp-content/uploads/2024/04/camping-3.jpg",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fbelmiraenfotografias%2F&psig=AOvVaw1gNVwmF_Xd7f53l_DFMPLj&ust=1743536646241000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNjM_6KKtYwDFQAAAAAdAAAAABAy"
     ],
     temperature: "14°C – 18°C (promedio en el día, bajando a 4°C en la noche)",
     climate: "Clima frío y húmedo, con posibilidad de lluvias ligeras, especialmente por la tarde. El viento puede ser intenso en la cumbre.",
@@ -89,7 +90,7 @@ const routes = [
       "Guantes de agarre (opcional)",
     ],
     weatherForecast: "https://weather.com/forecast-link",
-    mapImage: "../../public/Rutas/Venecia.PNG",
+    mapImage: "/Rutas/Venecia.PNG",
     altitudeProfileImage: "../../public/Rutas/Venecia2.PNG",
     gpsCoordinates: { lat: 6.2, long: -75.8 },
     environmentalImpact: "Moderado",
@@ -98,6 +99,7 @@ const routes = [
       "https://img1.wsimg.com/isteam/ip/c6b47dc5-e9f9-4f57-ba70-6630ef260636/2e19171e-2168-4a8c-8b82-5e2c8ae968f1.jpg/:/rs=w:400,cg:true,m",
       "https://e5f1887230.cbaul-cdnwnd.com/7a634ca319a87e294ca9ad8f8ec9181e/200000000-e096fe0970/WhatsApp%20Image%202020-05-08%20at%2013.17.53.jpeg?ph=e5f1887230",
       "https://www.viajarenverano.com/wp-content/uploads/2020/11/Venecia-Diosa.jpg",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fguiacerrotusa%2F%3Flocale%3Des_LA&psig=AOvVaw3oYoqG7LyU-AXh3IAIOB95&ust=1743536531059000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMif7_qJtYwDFQAAAAAdAAAAABAE"
     ],
     temperature: "20°C – 28°C (promedio en el día, bajando a 15°C en la noche)",
     climate: "Clima cálido y seco, con posibilidad de lluvias ocasionales por la tarde, especialmente en la temporada de invierno.",
