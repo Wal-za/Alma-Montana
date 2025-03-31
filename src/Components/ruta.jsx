@@ -97,13 +97,6 @@ const RouteDetails = () => {
           </p>
         </div>
 
-        <div className="price">
-          <h3>Valor:</h3>
-          <p>
-            {routeData.price.withoutLunch}
-          </p>
-        </div>
-
         <div className="itinerary">
           <h3>Itinerario:</h3>
           <ul>
@@ -140,6 +133,13 @@ const RouteDetails = () => {
           </div>
 
           <button className="btn-inscribirse">Inscribirse</button>
+        </div>
+
+        <div className="price">
+          <h3>Valor:</h3>
+          <p>
+            {routeData.price.withoutLunch}
+          </p>
         </div>
       </div>
 
