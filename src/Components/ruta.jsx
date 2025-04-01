@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Mountain } from "lucide-react";
-import { useParams } from "react-router-dom"; // Para obtener el id de la URL
-import "./ruta.css"; // Asegúrate de tener este archivo de estilos
+import { useParams } from "react-router-dom"; 
+import Inscribirse from "./modal";
+import "./ruta.css"; 
 import routes from "/public/routes.js";
 
 const RouteDetails = () => {
@@ -130,9 +131,7 @@ const RouteDetails = () => {
             {routeData.images.map((image, index) => (
               <img key={index} src={image} alt={`Imagen ${index + 1}`} />
             ))}
-          </div>
-
-          <button className="btn-inscribirse">Inscribirse</button>
+          </div>               
         </div>
 
         <div className="price">
@@ -141,6 +140,8 @@ const RouteDetails = () => {
             {routeData.price.withoutLunch}
           </p>
         </div>
+
+        <Inscribirse routeName={routeData.name} />
       </div>
 
       {/* Footer */}
