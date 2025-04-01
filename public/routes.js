@@ -14,7 +14,7 @@ const routes = [
     included: ["Transporte ida y regreso", "Seguro", "Guía local certificado"],
     price: { withoutLunch: "$120.000 con fiambre y $100.000 sin fiambre" },
     itinerary: [
-      "Salida puntual a las 5:30 AM desde Medellín hacia Belmira",
+     "Salida puntual a las 5:30 AM desde Medellín hacia Belmira. Si desea ser recogido en el camino, por favor avise con anticipación. Puede indicarnos el lugar de recogida a lo largo de la ruta.",
       "Ascenso por el Camino del Agua",
       "Llegada a la cumbre del páramo a 3,150 msnm",
       "Almuerzo en la parte alta del páramo",
@@ -24,9 +24,8 @@ const routes = [
     attractions: [
       "Camino del Agua",
       "Páramo de Belmira – Ecosistema único",
-      "Frailejones y orquídeas",
-      "Observación de aves",
-      "Vista panorámica de Antioquia",
+      "Frailejones y orquídeas",      
+      "Vista panorámica del paramo",
     ],
     recommendations: [
       "Llevar mínimo 2 a 3 litros de agua",
@@ -69,7 +68,7 @@ const routes = [
     included: ["Transporte ida y regreso", "Guía local", "Seguro médico"],
     price: { withoutLunch: "$100.000" },
     itinerary: [
-      "Salida de Medellín hacia Venecia",
+      "Salida de Medellín hacia Venecia Si desea ser recogido en el camino, por favor avise con anticipación. Puede indicarnos el lugar de recogida a lo largo de la ruta.",
       "Ascenso al Cerro Tusa – Un reto físico con vistas espectaculares",
       "Descenso y visita a la Piedra del Eco",
       "Exploración del Altar de los Sacrificios y la Cara de la Diosa",
