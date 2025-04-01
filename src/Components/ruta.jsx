@@ -4,11 +4,16 @@ import { useParams } from "react-router-dom";
 import Inscribirse from "./modal";
 import "./ruta.css"; 
 import routes from "/public/routes.js";
+import Whatsapp from './whatsapp'; 
 
 const RouteDetails = () => {
   const { id } = useParams(); // Obtener el id de la URL
   const [routeData, setRouteData] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {    
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     // Buscar la ruta que coincida con el id
@@ -27,6 +32,7 @@ const RouteDetails = () => {
 
   return (
     <div className="route-details">
+      <Whatsapp phoneNumber="+573194969983" />
       {/* Header */}
       <header className="header">
         <div className="container header-container">
@@ -39,10 +45,13 @@ const RouteDetails = () => {
 
       <div className="contenedor-rutas">
         {/* Mapa y Altimetría */}
+        <h2>{routeData.name}</h2>
+
         <div className="map">
-          <h2>{routeData.name}</h2>
+        <div className="imgmap">          
           <h3>Mapa:</h3>
           <img src={routeData.mapImage} alt="Mapa de la Ruta" />
+          </div>
 
           {/* Imagen de Altimetría */}
           {routeData.altitudeProfileImage && (
@@ -134,6 +143,21 @@ const RouteDetails = () => {
           </div>               
         </div>
 
+        {/* Video de YouTube */}
+        <div className="video">
+          <h3>Video:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src={routeData.videoUrl} 
+            title="Video de la Ruta"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <p className="creditos">Créditos: <a href={routeData.videoPageUrl} target="_blank" rel="noopener noreferrer">{routeData.videoCreator}</a></p>
+        </div>
+
         <div className="price">
           <h3>Valor:</h3>
           <p>
@@ -141,7 +165,7 @@ const RouteDetails = () => {
           </p>
         </div>
 
-        <Inscribirse routeName={routeData.name} />
+        {/*<Inscribirse routeName={routeData.name} />*/}
       </div>
 
       {/* Footer */}
@@ -165,7 +189,7 @@ const RouteDetails = () => {
               </a>
 
               <div className="social-links">
-                <a href="#">Facebook</a>
+                <a href="https://www.facebook.com/groups/926241216288674/?ref=share&mibextid=NSMWBT" target="_blank">Facebook</a>
               </div>
             </div>
           </div>

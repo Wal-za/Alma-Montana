@@ -142,10 +142,16 @@
   margin-right: 0.5rem;
 }
 
+.imgmap {
+  width: 50%;
+}
+
+
 /* Map and Altimetry */
 .contenedor-rutas .map {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;   
 }
+
 
 .contenedor-rutas .map img,
 .contenedor-rutas .altimetry img {
@@ -217,8 +223,49 @@
   color: white !important;
 }
 
+/* Estilos para el contenedor del video */
+.video {
+  margin-top: 20px;
+}
+
+/* Estilos para el iframe, que hará que sea responsive */
+.video iframe {
+  width: 100%; 
+  height: auto; 
+  max-width: 560px; 
+  aspect-ratio: 16 / 9; 
+}
+
+/* Estilo para las imágenes */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.creditos{
+  font-size: 70% !important;
+  margin-bottom: 5%;
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) { 
+
+  .imgmap {
+    width: 100%;
+  }
+
+  .video iframe {
+    max-width: 100%; 
+  }
 
   .contenedor-rutas h2 {
     font-size: 2rem;

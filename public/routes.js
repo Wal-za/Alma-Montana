@@ -5,9 +5,9 @@ const routes = [
     date: "Domingo 13 de abril, 2025",
     meetingTime: "5:30 AM",
     meetingPoint: "Estación Parque Berrío",
-    duration: "12 km",
+    duration: "13 km",
     maxAltitude: "3,150 metros sobre el nivel del mar",
-    difficulty: "4.5 de 5",      
+    difficulty: "4 de 5",      
     location: "Belmira",
     description: 
       "El Camino del Agua atraviesa el Páramo de Belmira, un ecosistema clave para el equilibrio hídrico de Antioquia. Este páramo es hogar de especies endémicas como los frailejones, y ofrece una inmersión única en la naturaleza. Durante el recorrido, disfrutarás de la serenidad del paisaje, con vistas panorámicas de los valles antioqueños y una flora y fauna que destacan por su singularidad. La caminata es un desafío moderado, ideal para quienes buscan combinar aventura con la belleza natural.",
@@ -49,11 +49,14 @@ const routes = [
       "https://puebliandoporantioquia.com.co/wp-content/uploads/2019/03/Belmira-60369170.jpg"
     ],
     temperature: "14°C – 18°C (promedio en el día, bajando a 4°C en la noche)",
-    climate: "Clima frío y húmedo, con posibilidad de lluvias ligeras, especialmente por la tarde. El viento puede ser intenso en la cumbre.",
+    climate: "Clima frío",
+    videoUrl: "https://www.youtube.com/embed/I_aGPbiKe1Y", 
+    videoPageUrl: "https://www.youtube.com/watch?v=I_aGPbiKe1Y",
+    videoCreator: "Canal Teleantioquia" 
   },
   {
     id: "Cerro-Tusa–Venecia",
-    name: "Cerro Tusa – Venecia",
+    name: "Cerro Tusa Venecia",
     date: "Domingo 20 de abril, 2025",
     meetingTime: "5:30 AM",
     meetingPoint: "Estación Parque Berrío",
@@ -87,7 +90,7 @@ const routes = [
       "Protección solar: gafas, gorra y bloqueador solar",
       "Repelente de insectos",
       "Bastón de senderismo (opcional)",
-      "Guantes de agarre (opcional)",
+      "Guantes de agarre por que hay que agarrarse de cuerdas en ciertos tramos (opcional)",
     ],
     weatherForecast: "https://weather.com/forecast-link",
     mapImage: "/Rutas/Venecia.PNG",
@@ -99,10 +102,13 @@ const routes = [
       "https://img1.wsimg.com/isteam/ip/c6b47dc5-e9f9-4f57-ba70-6630ef260636/2e19171e-2168-4a8c-8b82-5e2c8ae968f1.jpg/:/rs=w:400,cg:true,m",
       "https://e5f1887230.cbaul-cdnwnd.com/7a634ca319a87e294ca9ad8f8ec9181e/200000000-e096fe0970/WhatsApp%20Image%202020-05-08%20at%2013.17.53.jpeg?ph=e5f1887230",
       "https://www.viajarenverano.com/wp-content/uploads/2020/11/Venecia-Diosa.jpg",
-      "https://www.viajesdepuebloenpueblo.com/tour_venecia_antioquia_pesebre_de_venecia"
+      "https://s2.wklcdn.com/image_66/1990227/154986525/97370438Master.jpg"
     ],
     temperature: "20°C – 28°C (promedio en el día, bajando a 15°C en la noche)",
-    climate: "Clima cálido y seco, con posibilidad de lluvias ocasionales por la tarde, especialmente en la temporada de invierno.",
+    climate: "Clima cálido.",
+    videoUrl: "https://www.youtube.com/embed/67PQeK5rbJg", 
+    videoPageUrl: "https://www.youtube.com/watch?v=67PQeK5rbJg",
+    videoCreator: "Juan Acosta 4x4" 
   },
 ];
 
