@@ -33,6 +33,7 @@ const routes = [
       "Zapatos de buen agarre",
       "Protección solar: gafas, gorra y bloqueador",
       "Repelente de insectos",
+      "Llevar zapatos de cambio",
       "Bastón de senderismo (opcional)",
     ],
     weatherForecast: "https://weather.com/forecast-link",
