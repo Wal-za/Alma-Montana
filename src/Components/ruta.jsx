@@ -166,7 +166,7 @@ console.log(id)
           </p>
         </div>
 
-        {<Inscribirse routeName={routeData.id} />}
+        {/*<Inscribirse routeName={routeData.id} />*/}
       </div>
 
       {/* Footer */}
