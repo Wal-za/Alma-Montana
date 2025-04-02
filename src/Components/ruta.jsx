@@ -165,7 +165,7 @@ const RouteDetails = () => {
           </p>
         </div>
 
-        {/*<Inscribirse routeName={routeData.name} />*/}
+        {<Inscribirse routeName={routeData.id} />}
       </div>
 
       {/* Footer */}

@@ -1,6 +1,6 @@
 const routes = [
   {
-    id: "Páramo-de-Belmira",
+    id: "Páramo de Belmira 13/04/2025",
     name: "Páramo de Belmira",
     date: "Domingo 13 de abril, 2025",
     meetingTime: "5:30 AM",
@@ -54,7 +54,7 @@ const routes = [
     videoCreator: "Canal Teleantioquia" 
   },
   {
-    id: "Cerro-Tusa–Venecia",
+    id: "Cerro Tusa Venecia 20/04/2025",
     name: "Cerro Tusa Venecia",
     date: "Domingo 20 de abril, 2025",
     meetingTime: "5:30 AM",

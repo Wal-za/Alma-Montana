@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import axios from "axios" // Importa Axios
 import { X } from "lucide-react"
-// Importa el archivo CSS
+import Swal from 'sweetalert2';
 import "./modal.css"
 
 // Componente de modal de registro
@@ -52,19 +52,47 @@ function RegistrationModal({ routeName }) {
 
   // Función para enviar los datos al servidor
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/api/register", formData)
-      console.log("Datos enviados correctamente:", response.data)
-      
-      // Cerrar el modal al enviar los datos
-      setIsOpen(false)
+      const response = await axios.post("http://localhost:3001/api/register", formData);
+          
+      setIsOpen(false);
+
+       // Restablecer los datos del formulario
+        setFormData({
+          documentType: "",
+          documentNumber: "",
+          firstName: "",
+          contactNumber: "", 
+          eps: "",
+          bloodType: "",
+          contactPerson: "",
+          contactPersonNumber: "",
+          customProp: routeName, 
+        });
+
+      // Mostramos la alerta de SweetAlert2 después de la respuesta exitosa
+      Swal.fire({
+        title: '¡Registro Exitoso!',
+        text: 'Te has registrado exitosamente. ¡Nos vemos en el camino para esta gran aventura!',
+        icon: 'success', 
+        confirmButtonText: 'Genial! Estoy listo',
+        customClass: {
+          confirmButton: 'btn-aceptar' 
+        },
+        buttonsStyling: false 
+      });
     } catch (error) {
-      console.error("Error al enviar los datos:", error)
-      alert("Hubo un error al enviar los datos. Inténtalo de nuevo.")
+      console.error("Error al enviar los datos:", error);
+      Swal.fire({
+        title: 'Error',
+        text: 'Hubo un error al enviar los datos. Inténtalo de nuevo.',
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
     }
-  }
+  };
 
   if (!isOpen) return (
     <button onClick={openModal} className="btn-inscribirse">
@@ -196,7 +224,7 @@ function RegistrationModal({ routeName }) {
 
                 <div className="form-group">
                   <label htmlFor="contactPersonNumber" className="form-label">
-                    Número de contacto de esa persona
+                    Número de contacto
                   </label>
                   <input
                     id="contactPersonNumber"

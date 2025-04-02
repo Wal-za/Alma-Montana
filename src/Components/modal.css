@@ -152,4 +152,16 @@
     background-color: #3f6a0a;
   }
   
-  
+  /* Personalización del botón */
+.swal2-popup .btn-aceptar {
+  background-color: #4d7c0f; /* Color verde que pediste */
+  color: white; /* Texto en blanco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.swal2-popup .btn-aceptar:hover {
+  background-color: #3c6b0e; /* Un verde más oscuro cuando el usuario pasa el mouse por encima */
+}
