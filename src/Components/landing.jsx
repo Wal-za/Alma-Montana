@@ -68,86 +68,94 @@ const AlmaDeMontana = () => {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section id="inicio" className="hero">
-        <div className="relleno"></div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <div>  
-            <h1>Explora la Naturaleza con Nosotros</h1>
-            <p>Descubre senderos, montañas y paisajes increíbles en compañía de otros amantes de la naturaleza.</p>
-           
-          </div>
+     {/* Hero Section */}
+    <section id="inicio" className="hero">
+      <div className="hero-overlay"></div> {/* Capa para hacer el texto legible */}
+      <div className="hero-content">
+        <div className="hero-text-container">
+          <h1>Conéctate con la Naturaleza: Vive la Aventura del Senderismo</h1>
+          <p>Únete a nuestra familia de senderistas y disfruta de experiencias únicas en la naturaleza.</p>
+          {/* Botón de llamada a la acción */}
+          <a href="#rutas" className="cta-button">Descubre nuestras rutas</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className="mission-vision" id="quienes-somos">
+    {/* Quines somos */}
+    <section className="mission-vision" id="quienes-somos">
   <div className="container">
-    <div className="">
-      {/* Quienes Somos */}
-      <div className="mission-card">
-  <h2 className="section-title">
-    <span className="icon-bg">
-      <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
-    </span>
-    ¿Quiénes Somos?
-  </h2>
-  <p className="section-text">
-    Somos una familia unida por la pasión por la naturaleza. Caminamos para conectarnos, reflexionar y renovar nuestra energía, cuidando y celebrando la tierra que nos acoge. 
-  </p>
-  <p className="section-text">
-    Creemos que el senderismo es mucho más que un deporte: es una forma de vida consciente. Cada paso nos invita a reflexionar sobre nuestro impacto y a preservar el planeta para las futuras generaciones.
-  </p>
-  <p className="section-text">
-    Si amas la naturaleza y quieres unirte a un grupo que pone la tierra en primer lugar, ven a caminar con nosotros. Juntos descubriremos nuevos horizontes y aprenderemos a cuidar de nuestro hogar: el planeta. ¡El viaje empieza hoy!
-  </p>
-</div>
-
+    <div className="mission-card">
+      {/* Título de la sección con ícono */}
+      <h2 className="section-title">
+        <span className="icon-bg">
+          <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
+        </span>
+        ¿Quiénes Somos?
+      </h2>
+      {/* Descripción */}
+      <div className="section-content">
+        <p className="section-text">
+          Somos una familia unida por la pasión por la naturaleza. Caminamos para conectarnos, reflexionar y renovar nuestra energía, cuidando y celebrando la tierra que nos acoge.
+        </p>
+        <p className="section-text">
+          Creemos que el senderismo es mucho más que un deporte: es una forma de vida consciente. Cada paso nos invita a reflexionar sobre nuestro impacto y a preservar el planeta para las futuras generaciones.
+        </p>
+        <p className="section-text">
+          Si amas la naturaleza y quieres unirte a un grupo que pone la tierra en primer lugar, ven a caminar con nosotros. Juntos descubriremos nuevos horizontes y aprenderemos a cuidar de nuestro hogar: el planeta. ¡El viaje empieza hoy!
+        </p>
+      </div>
+      {/* Botón de llamada a la acción */}
+      <div className="cta-container">
+        <a href="#rutas" className="cta-button">Únete a nuestras rutas</a>
+      </div>
     </div>
   </div>
-      </section>
-
+    </section>
 
       {/* Mission & Vision Section */}
       <section className="mission-vision" id="mision-y-vision">
-        <div className="container">
-          <div className="mission-vision-grid">
-            {/* Mission */}
-            <div className="mission-card">
-            <h2 className="section-title">
-              <span className="icon-bg">
-                <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
-              </span>
-              Nuestra Misión
-            </h2>
-            <p className="section-text">
-              En Alma de Montaña no solo caminamos por senderos, sino que abrazamos la naturaleza para transformar nuestras vidas. Somos una familia de aventureros que encuentra en cada paso una oportunidad para sanar, despejar la mente y alimentar el alma. Creemos que la naturaleza es la clave para liberar el estrés, fortalecer la salud y reconectar con lo esencial.
-            </p>
-            <p className="section-text">
-              Promovemos un estilo de vida consciente, donde el respeto y amor por la naturaleza guían cada uno de nuestros pasos. Juntos, somos una comunidad que disfruta de la montaña mientras protege nuestro entorno.
-            </p>
-          </div>
-
-
-            {/* Vision */}
-            <div className="vision-card">
-            <h2 className="section-title">
-              <span className="icon-bg">
-                <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
-              </span>
-              Nuestra Visión
-            </h2>
-            <p className="section-text">
-              Queremos ser la comunidad de senderismo más apasionada, donde cada persona descubra que la montaña es mucho más que un destino; es un camino hacia el bienestar y la plenitud. Buscamos inspirar a más personas a dejar la rutina, explorar la naturaleza y entender que caminar por los senderos es una inversión en su salud, paz mental y felicidad.
-            </p>
-            <p className="section-text">
-              En Alma de Montaña, creemos que amar la montaña es también protegerla, por eso promovemos el respeto y la conservación de cada lugar que exploramos. Visualizamos un mundo donde más personas se conecten con la naturaleza y experimenten sus beneficios físicos, mentales y espirituales.
-            </p>
-          </div>
-
-          </div>
+  <div className="container">
+    <div className="mission-vision-grid">
+      {/* Misión */}
+      <div className="mission-card">
+        <h2 className="section-title">
+          <span className="icon-bg">
+            <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
+          </span>
+          Nuestra Misión
+        </h2>
+        <div className="section-content">
+          <p className="section-text">
+            En Alma de Montaña no solo caminamos por senderos, sino que abrazamos la naturaleza para transformar nuestras vidas. Somos una familia de aventureros que encuentra en cada paso una oportunidad para sanar, despejar la mente y alimentar el alma. Creemos que la naturaleza es la clave para liberar el estrés, fortalecer la salud y reconectar con lo esencial.
+          </p>
+          <p className="section-text">
+            Promovemos un estilo de vida consciente, donde el respeto y amor por la naturaleza guían cada uno de nuestros pasos. Juntos, somos una comunidad que disfruta de la montaña mientras protege nuestro entorno.
+          </p>
         </div>
+      </div>
+
+      {/* Visión */}
+      <div className="vision-card">
+        <h2 className="section-title">
+          <span className="icon-bg">
+            <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
+          </span>
+          Nuestra Visión
+        </h2>
+        <div className="section-content">
+          <p className="section-text">
+            Queremos ser la comunidad de senderismo más apasionada, donde cada persona descubra que la montaña es mucho más que un destino; es un camino hacia el bienestar y la plenitud. Buscamos inspirar a más personas a dejar la rutina, explorar la naturaleza y entender que caminar por los senderos es una inversión en su salud, paz mental y felicidad.
+          </p>
+          <p className="section-text">
+            En Alma de Montaña, creemos que amar la montaña es también protegerla, por eso promovemos el respeto y la conservación de cada lugar que exploramos. Visualizamos un mundo donde más personas se conecten con la naturaleza y experimenten sus beneficios físicos, mentales y espirituales.
+          </p>
+        </div>
+      </div>
+    </div>
+    {/* Botón CTA */}    
+  </div>
       </section>
+
 
       {/* Monthly Routes Section */}
       <section id="rutas" className="routes-section">
