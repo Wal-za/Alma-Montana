@@ -14,8 +14,7 @@ const RouteDetails = () => {
   useEffect(() => {    
     window.scrollTo(0, 0);
   }, []);
-console.log(id)
-
+  
   useEffect(() => {
     // Buscar la ruta que coincida con el id
     const route = routes.find((route) => route.id == id);
@@ -38,7 +37,7 @@ console.log(id)
       <header className="header">
         <div className="container header-container">
           <div className="logo">
-          <img src="/logo.png" className="logo-img"  alt="Alma de Montaña"/>
+            <img src="/logo.png" className="logo-img" alt="Alma de Montaña"/>
             <span className="logo-text">Alma de Montaña</span>
           </div>
         </div>
@@ -49,9 +48,9 @@ console.log(id)
         <h2>{routeData.name}</h2>
 
         <div className="map">
-        <div className="imgmap">          
-          <h3>Mapa:</h3>
-          <img src={routeData.mapImage} alt="Mapa de la Ruta" />
+          <div className="imgmap">          
+            <h3>Mapa:</h3>
+            <img src={routeData.mapImage} alt="Mapa de la Ruta" />
           </div>
 
           {/* Imagen de Altimetría */}
@@ -104,7 +103,7 @@ console.log(id)
             <strong>Temperatura promedio:</strong> {routeData.temperature}
           </p>
           <p>
-            <strong>Clima esperado:</strong> {routeData.climate}
+            <strong>Clima:</strong> {routeData.climate}
           </p>
         </div>
 
@@ -143,6 +142,12 @@ console.log(id)
             ))}
           </div>               
         </div>
+         
+         {/* Sección añadida para recordar el cuidado del medio ambiente */}
+        <div className="environmental-care">
+          <h3>Que no quede Huella</h3>
+          <p>{routeData.environmentalCareMessage}</p>
+        </div>
 
         {/* Video de YouTube */}
         <div className="video">
@@ -160,11 +165,11 @@ console.log(id)
         </div>
 
         <div className="price">
-          <h3>Valor:</h3>
+          <h3>Inversion:</h3>
           <p>
             {routeData.price.withoutLunch}
           </p>
-        </div>
+        </div>     
 
         {/*<Inscribirse routeName={routeData.id} />*/}
       </div>

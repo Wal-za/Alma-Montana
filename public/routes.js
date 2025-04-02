@@ -1,6 +1,6 @@
 const routes = [
   {
-    id: "Páramo de Belmira",
+    id: "Páramo-de-Belmira-13-abril-2025",
     name: "Páramo de Belmira",
     date: "Domingo 13 de abril, 2025",
     meetingTime: "5:30 AM",
@@ -33,7 +33,6 @@ const routes = [
       "Zapatos de buen agarre",
       "Protección solar: gafas, gorra y bloqueador",
       "Repelente de insectos",
-      "Llevar zapatos de cambio",
       "Bastón de senderismo (opcional)",
     ],
     weatherForecast: "https://weather.com/forecast-link",
@@ -41,6 +40,7 @@ const routes = [
     altitudeProfileImage: "/Rutas/Belmira2.PNG",
     gpsCoordinates: { lat: 6.0, long: -75.9 },
     environmentalImpact: "Bajo",
+    environmentalCareMessage: "El Páramo de Belmira es un ecosistema único y frágil, hogar de especies como los frailejones y un recurso vital para el agua de nuestra región. Por favor, mantén los senderos limpios, no dejes residuos y respeta tanto la flora como la fauna local. Cada paso cuenta para preservar este delicado equilibrio natural, y nuestra responsabilidad es cuidar de este entorno para que futuras generaciones puedan disfrutarlo igual que nosotros.",
     img: "https://antioquiadeaventura.com/wp-content/uploads/2024/10/P1150737-2-1024x683.jpg",
     images: [
       "https://aaecoturismo.com/wp-content/uploads/2019/08/Belmira-2.jpg",
@@ -55,7 +55,7 @@ const routes = [
     videoCreator: "Canal Teleantioquia" 
   },
   {
-    id: "Cerro Tusa Venecia",
+    id: "Cerro-Tusa-Venecia-20-abril-2025",
     name: "Cerro Tusa Venecia",
     date: "Domingo 20 de abril, 2025",
     meetingTime: "5:30 AM",
@@ -97,6 +97,8 @@ const routes = [
     altitudeProfileImage: "/Rutas/Venecia2.PNG",
     gpsCoordinates: { lat: 6.2, long: -75.8 },
     environmentalImpact: "Moderado",
+    environmentalCareMessage: "El Cerro Tusa es un lugar de gran valor natural y cultural. Además de su imponente flora y fauna, alberga sitios arqueológicos como el Altar de los Sacrificios y la Piedra del Eco. Para preservar este patrimonio, te pedimos que no dejes residuos y respetes el entorno en todo momento. Cada huella que dejamos aquí impacta tanto el paisaje natural como el cultural, así que cuidemos este tesoro para que todos podamos seguir disfrutándolo y aprendiendo de él.",
+
     img: "https://www.infobae.com/new-resizer/Wr0HJGLlOnvXDfATktDojOHw7k8=/arc-anglerfish-arc2-prod-infobae/public/GIK4OMFOCJEGZMIKWKCXNI3VGI.png",
     images: [
       "https://img1.wsimg.com/isteam/ip/c6b47dc5-e9f9-4f57-ba70-6630ef260636/2e19171e-2168-4a8c-8b82-5e2c8ae968f1.jpg/:/rs=w:400,cg:true,m",
