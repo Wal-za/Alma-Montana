@@ -94,16 +94,17 @@ const AlmaDeMontana = () => {
       </h2>
       {/* Descripción */}
       <div className="section-content">
-        <p className="section-text">
-          Somos una familia unida por la pasión por la naturaleza. Caminamos para conectarnos, reflexionar y renovar nuestra energía, cuidando y celebrando la tierra que nos acoge.
-        </p>
-        <p className="section-text">
-          Creemos que el senderismo es mucho más que un deporte: es una forma de vida consciente. Cada paso nos invita a reflexionar sobre nuestro impacto y a preservar el planeta para las futuras generaciones.
-        </p>
-        <p className="section-text">
-          Si amas la naturaleza y quieres unirte a un grupo que pone la tierra en primer lugar, ven a caminar con nosotros. Juntos descubriremos nuevos horizontes y aprenderemos a cuidar de nuestro hogar: el planeta. ¡El viaje empieza hoy!
-        </p>
-      </div>
+  <p className="section-text">
+    Somos una familia unida por la pasión por la naturaleza. Cada caminata es una oportunidad para conectarnos con el entorno, reflexionar y renovar nuestras energías. Pero también, a través del senderismo, descubrimos la riqueza de los pueblos que encontramos en nuestro camino, compartiendo momentos con sus gentes y aprendiendo de su forma de vida, profundamente conectada con la tierra.
+  </p>
+  <p className="section-text">
+    Creemos que el senderismo es mucho más que un deporte: es una manera de vivir conscientemente, un espacio para disfrutar de la naturaleza, pero también para conocer las historias de aquellos que preservan el alma de sus comunidades. Cada paso nos invita a reflexionar sobre nuestro impacto y a celebrar la cultura local, en un intercambio sincero con quienes cuidan de sus tierras y tradiciones.
+  </p>
+  <p className="section-text">
+    Si amas la naturaleza y buscas una forma auténtica de explorar el mundo, ven a caminar con nosotros. Juntos recorreremos senderos, descubriremos pueblos pintorescos, y compartiremos vivencias con las personas que los habitan. Aprenderemos a cuidar de nuestro hogar, el planeta, y a conectar con sus habitantes de una forma que va más allá de lo superficial. ¡El viaje empieza hoy!
+  </p>
+</div>
+
       {/* Botón de llamada a la acción */}
       <div className="cta-container">
         <a href="#rutas" className="cta-button">Únete a nuestras rutas</a>
@@ -112,49 +113,31 @@ const AlmaDeMontana = () => {
   </div>
     </section>
 
-      {/* Mission & Vision Section */}
-      <section className="mission-vision" id="mision-y-vision">
+     {/* Mission & Vision Section */}
+<section className="mission-vision" id="mision-y-vision">
   <div className="container">
     <div className="mission-vision-grid">
-      {/* Misión */}
+      {/* Misión y Visión combinadas */}
       <div className="mission-card">
         <h2 className="section-title">
           <span className="icon-bg">
             <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
           </span>
-          Nuestra Misión
+          Nuestra Misión y Visión
         </h2>
         <div className="section-content">
           <p className="section-text">
-            En Alma de Montaña no solo caminamos por senderos, sino que abrazamos la naturaleza para transformar nuestras vidas. Somos una familia de aventureros que encuentra en cada paso una oportunidad para sanar, despejar la mente y alimentar el alma. Creemos que la naturaleza es la clave para liberar el estrés, fortalecer la salud y reconectar con lo esencial.
+            En Alma de Montaña no solo caminamos por senderos, sino que buscamos vivir de manera consciente, conectándonos con la naturaleza y con las personas de los pueblos que encontramos en el camino. Cada paso es una oportunidad para renovar nuestra energía, compartir experiencias y aprender de quienes cuidan sus tierras y tradiciones. Creemos que el senderismo es más que una actividad física: es un viaje hacia el bienestar, donde cada sendero nos enseña a respetar el medio ambiente y a construir vínculos auténticos con las comunidades locales.
           </p>
           <p className="section-text">
-            Promovemos un estilo de vida consciente, donde el respeto y amor por la naturaleza guían cada uno de nuestros pasos. Juntos, somos una comunidad que disfruta de la montaña mientras protege nuestro entorno.
-          </p>
-        </div>
-      </div>
-
-      {/* Visión */}
-      <div className="vision-card">
-        <h2 className="section-title">
-          <span className="icon-bg">
-            <Mountain className="h-6 w-6" style={{ color: "#4d7c0f" }} />
-          </span>
-          Nuestra Visión
-        </h2>
-        <div className="section-content">
-          <p className="section-text">
-            Queremos ser la comunidad de senderismo más apasionada, donde cada persona descubra que la montaña es mucho más que un destino; es un camino hacia el bienestar y la plenitud. Buscamos inspirar a más personas a dejar la rutina, explorar la naturaleza y entender que caminar por los senderos es una inversión en su salud, paz mental y felicidad.
-          </p>
-          <p className="section-text">
-            En Alma de Montaña, creemos que amar la montaña es también protegerla, por eso promovemos el respeto y la conservación de cada lugar que exploramos. Visualizamos un mundo donde más personas se conecten con la naturaleza y experimenten sus beneficios físicos, mentales y espirituales.
+            Nuestra visión es ser una comunidad activa que no solo recorre montañas, sino que también se involucra en la conservación de los lugares que exploramos. Queremos inspirar a más personas a dejar atrás la rutina, a conocer la belleza de la naturaleza y las historias de quienes habitan los pueblos, aprendiendo juntos a cuidar nuestro hogar: el planeta. Visualizamos un mundo donde caminar por los senderos no solo sea un ejercicio físico, sino una forma de conexión profunda con la naturaleza y la humanidad.
           </p>
         </div>
       </div>
     </div>
-    {/* Botón CTA */}    
   </div>
-      </section>
+</section>
+
 
 
       {/* Monthly Routes Section */}
