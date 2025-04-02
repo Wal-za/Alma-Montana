@@ -28,12 +28,14 @@ const routes = [
       "Vista panorámica del paramo",
     ],
     recommendations: [
-      "Llevar mínimo 2 a 3 litros de agua",
+      "Lleva al menos 2 litros de agua. Cada persona conoce sus necesidades, así que asegúrate de llevar suficiente hidratación según tu cuerpo.",
       "Ropa de abrigo e impermeable",
+      "Fruta y mekato para el camino",
       "Zapatos de buen agarre",
       "Protección solar: gafas, gorra y bloqueador",
       "Repelente de insectos",
       "Bastón de senderismo (opcional)",
+      "Recuerda que vamos en grupo. Evita adelantar o rezagarte demasiado para mantener la unidad y evitar que alguien se pierda durante el recorrido."
     ],
     weatherForecast: "https://weather.com/forecast-link",
     mapImage: "/Rutas/Belmira.PNG",
@@ -49,7 +51,7 @@ const routes = [
       "https://puebliandoporantioquia.com.co/wp-content/uploads/2019/03/Belmira-60369170.jpg"
     ],
     temperature: "14°C – 18°C (promedio en el día, bajando a 4°C en la noche)",
-    climate: "Clima frío",
+    climate: "frío",
     videoUrl: "https://www.youtube.com/embed/I_aGPbiKe1Y", 
     videoPageUrl: "https://www.youtube.com/watch?v=I_aGPbiKe1Y",
     videoCreator: "Canal Teleantioquia" 
@@ -84,20 +86,21 @@ const routes = [
       "Vistas espectaculares del suroeste antioqueño",
     ],
     recommendations: [
-      "Llevar mínimo 2 a 3 litros de agua",
+      "Lleva al menos 2 litros de agua. Cada persona conoce sus necesidades, así que asegúrate de llevar suficiente hidratación según tu cuerpo.",
+      "Fruta y mekato para el camino",
       "Ropa cómoda y ligera",
       "Zapatos con buen agarre",
       "Protección solar: gafas, gorra y bloqueador solar",
       "Repelente de insectos",
       "Bastón de senderismo (opcional)",
       "Guantes de agarre por que hay que agarrarse de cuerdas en ciertos tramos (opcional)",
-    ],
+      "Recuerda que vamos en grupo. Evita adelantar o rezagarte demasiado para mantener la unidad y evitar que alguien se pierda durante el recorrido."    ],
     weatherForecast: "https://weather.com/forecast-link",
     mapImage: "/Rutas/Venecia.PNG",
     altitudeProfileImage: "/Rutas/Venecia2.PNG",
     gpsCoordinates: { lat: 6.2, long: -75.8 },
     environmentalImpact: "Moderado",
-    environmentalCareMessage: "El Cerro Tusa es un lugar de gran valor natural y cultural. Además de su imponente flora y fauna, alberga sitios arqueológicos como el Altar de los Sacrificios y la Piedra del Eco. Para preservar este patrimonio, te pedimos que no dejes residuos y respetes el entorno en todo momento. Cada huella que dejamos aquí impacta tanto el paisaje natural como el cultural, así que cuidemos este tesoro para que todos podamos seguir disfrutándolo y aprendiendo de él.",
+    environmentalCareMessage: "Cerro Tusa es un lugar de gran valor natural y cultural. Además de su imponente flora y fauna, alberga sitios arqueológicos como el Altar de los Sacrificios y la Piedra del Eco. Para preservar este patrimonio, te pedimos que no dejes residuos y respetes el entorno en todo momento. Cada huella que dejamos aquí impacta tanto el paisaje natural como el cultural, así que cuidemos este tesoro para que todos podamos seguir disfrutándolo y aprendiendo de él.",
 
     img: "https://www.infobae.com/new-resizer/Wr0HJGLlOnvXDfATktDojOHw7k8=/arc-anglerfish-arc2-prod-infobae/public/GIK4OMFOCJEGZMIKWKCXNI3VGI.png",
     images: [
@@ -107,7 +110,7 @@ const routes = [
       "https://s2.wklcdn.com/image_66/1990227/154986525/97370438Master.jpg"
     ],
     temperature: "20°C – 28°C (promedio en el día, bajando a 15°C en la noche)",
-    climate: "Clima cálido.",
+    climate: "cálido.",
     videoUrl: "https://www.youtube.com/embed/67PQeK5rbJg", 
     videoPageUrl: "https://www.youtube.com/watch?v=67PQeK5rbJg",
     videoCreator: "Juan Acosta 4x4" 
