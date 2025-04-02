@@ -14,10 +14,11 @@ const RouteDetails = () => {
   useEffect(() => {    
     window.scrollTo(0, 0);
   }, []);
+console.log(id)
 
   useEffect(() => {
     // Buscar la ruta que coincida con el id
-    const route = routes.find((route) => route.id === id);
+    const route = routes.find((route) => route.id == id);
     if (route) {
       setRouteData(route);
       setLoading(false);
